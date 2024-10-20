@@ -109,13 +109,13 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a class="nav-link" href="../index.html">IDOLA</a>
+                <a class="nav-link" href="../index.html" itemprop="url">IDOLA</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="form.html"><strong><u>NILAI WEB</u></strong></a>
+                <a class="nav-link" href="form.html" itemprop="url"><strong><u>NILAI WEB</u></strong></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="../table/table.html">REVIEW</a>
+                <a class="nav-link" href="../table/table.html" itemprop="url">REVIEW</a>
               </li>
             </ul>
           </div>
@@ -127,12 +127,12 @@
     <div class="container my-5">
       <div class="row justify-content-center">
         <div class="col-md-8">
-          <div class="card shadow-sm">
+          <div class="card shadow-sm" itemscope itemtype="http://schema.org/Review">
             <div class="card-header text-white">
-              <h3 class="mb-0">Form Penilaian Website</h3>
+              <h3 class="mb-0" itemprop="name">Form Penilaian Website</h3>
             </div>
             <div class="card-body">
-              <form action="" method="GET">
+              <form action="" method="GET" itemscope itemtype="http://schema.org/Rating">
                 <!-- Nama Penilai -->
                 <div class="mb-3">
                   <label for="nama" class="form-label">Nama Penilai</label>
@@ -142,7 +142,7 @@
                     id="nama"
                     name="nama"
                     required
-                    itemprop="name"
+                    itemprop="author"
                   />
                 </div>
 
@@ -155,7 +155,7 @@
                     id="tanggal"
                     name="tanggal"
                     required
-                    itemprop="date"
+                    itemprop="datePublished"
                   />
                 </div>
 
@@ -240,7 +240,7 @@
                 </div>
 
                 <!-- Submit Button -->
-                <button type="submit" class="btn btn-primary">Kirim Penilaian</button>
+                <button type="submit" class="btn btn-primary" itemprop="potentialAction">Kirim Penilaian</button>
               </form>
             </div>
           </div>
@@ -252,10 +252,10 @@
     <footer itemscope itemtype="http://schema.org/WPFooter">
       <div class="container">
         <div class="row">
-          <div class="col-md-4">
+          <div class="col-md-4" itemscope itemtype="http://schema.org/Person">
             <h3>Kenali Saya</h3>
             <p itemprop="name">Chandra Budi Wijaya - 122140093</p>
-            <p>Teknik Informatika-Institut Teknologi Sumatera</p>
+            <p itemprop="affiliation">Teknik Informatika-Institut Teknologi Sumatera</p>
           </div>
           <div class="col-md-4" itemscope itemtype="http://schema.org/ContactPoint">
             <h3>Hubungi Saya</h3>

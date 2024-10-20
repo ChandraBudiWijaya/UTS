@@ -11,11 +11,11 @@
 
   <body>
     <!-- Header -->
-    <header class="sticky-top shadow-sm">
-      <nav id="navBar" class="navbar navbar-expand-lg navbar-light">
+    <header class="sticky-top shadow-sm" itemscope itemtype="http://schema.org/WPHeader">
+      <nav id="navBar" class="navbar navbar-expand-lg navbar-light" itemscope itemtype="http://schema.org/SiteNavigationElement">
         <div class="container">
           <!-- Logo and Brand Name -->
-          <a class="navbar-brand" href="index.html">
+          <a class="navbar-brand" href="index.html" itemprop="url">
             <img
               src="public/logo.png"
               alt="Logo"
@@ -48,10 +48,10 @@
                 <a class="nav-link" href="index.html"><strong><u>IDOLA</u></strong></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="form/form.html">NILAI WEB</a>
+                <a class="nav-link" href="form/form.html" itemprop="url">NILAI WEB</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="table/table.html">REVIEW</a>
+                <a class="nav-link" href="table/table.html" itemprop="url">REVIEW</a>
               </li>
             </ul>
           </div>
@@ -75,9 +75,9 @@
         </div>
 
         <!-- Main Content -->
-        <main class="col-lg-9 mx-auto mt-8">
+        <main class="col-lg-9 mx-auto mt-8" itemscope itemtype="http://schema.org/Person">
           <!-- Profile Section -->
-          <section id="profile" itemscope itemtype="http://schema.org/Person">
+          <section id="profile">
             <h2 class="mb-4" itemprop="jobTitle">Profil</h2>
             <div
               id="jumbo"
@@ -162,10 +162,10 @@
           </section>
 
           <!-- Video Section -->
-          <section id="videos" class="mb-5">
+          <section id="videos" class="mb-5" itemscope itemtype="http://schema.org/VideoObject">
             <h2 class="mb-4">Video Terpopuler</h2>
             <div class="ratio ratio-16x9">
-              <iframe allow="autoplay" width="560" height="315" src="https://www.youtube.com/embed/b4_PA7GsLwA?si=c8zD9fa4eoL1WdT8" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen itemprop="video"></iframe>
+              <iframe allow="autoplay" width="560" height="315" src="https://www.youtube.com/embed/b4_PA7GsLwA?si=c8zD9fa4eoL1WdT8" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen itemprop="embedUrl"></iframe>
             </div>
           </section>
         </main>
@@ -173,7 +173,7 @@
     </div>
 
     <!-- Footer -->
-    <footer itemscope itemtype="http://schema.org/Person">
+    <footer itemscope itemtype="http://schema.org/WPFooter">
       <div class="container">
         <div class="row">
           <div class="col-md-4">
