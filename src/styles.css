@@ -36,11 +36,11 @@ header {
 }
 
 .navbar-brand {
-    color: #D4AF37;  /* Brand logo color */
+    color: #ffc400;  /* Brand logo color */
 }
 
 .navbar-toggler-icon {
-    background-color: #ECDFCC;
+    background-color: #ffffff00;
 }
 
 /* Sidebar */
