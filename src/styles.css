@@ -11,7 +11,7 @@ body {
     background-color: #252525 !important;
     opacity: 1;
     background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #252525 10px ), repeating-linear-gradient( #1c1c1c55, #1c1c1c );
-    color: #ECDFCC !important;             /* Cream color for readable text */
+    color: #ECDFCC !important;             
     margin: 0;
     padding: 0;
     line-height: 1.6;
@@ -24,19 +24,19 @@ header {
 
 /* Header */
 .sticky-top {
-    background-color: #1e201e00;  /* Dark green for the header */
+    background-color: #1e201e00;
     color: #ECDFCC;
     z-index: 1000;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .navbar-light .navbar-nav .nav-link {
     color: #ffffff !important;
-    font-weight: 600;  /* Bold text for better contrast */
+    font-weight: 600;
 }
 
 .navbar-brand {
-    color: #ffc400;  /* Brand logo color */
+    color: #ffc400;
 }
 
 .navbar-toggler-icon {
@@ -64,7 +64,7 @@ header {
 }
 
 .sidebar .nav-link:hover {
-    background-color: #D4AF37;  /* Golden highlight */
+    background-color: #D4AF37;
     color: #1E201E;
 }
 
@@ -73,8 +73,8 @@ main {
     background-color: #1e201e00 !important;
     padding: 40px;
     border-radius: 15px;
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1); /* Softer shadow */
-    margin-bottom: 40px; /* Space at the bottom */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
 }
 
 main h2 {
@@ -87,7 +87,7 @@ main h2 {
     color: #ECDFCC;
     padding: 20px;
     border-radius: 15px;
-    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.15); /* Elegant shadow */
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.15);
 }
 
 .profile-img {
@@ -102,7 +102,7 @@ main h2 {
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 20px;
-    border-left: 4px solid #D4AF37;  /* Golden accent border */
+    border-left: 4px solid #D4AF37;
 }
 
 /* Footer */
@@ -113,7 +113,7 @@ footer {
 }
 
 footer h3 {
-    color: #ffffff;  /* Golden section headers */
+    color: #ffffff;
 }
 
 footer a {
@@ -164,3 +164,42 @@ section {
   border: 1px solid black;
   opacity: 0.6;
 }
+
+/* Styling untuk tabel */
+table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #000000;
+  }
+  
+  .table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
+    background-color: #5b5b5b;
+    color: white !important;
+  }
+  
+  .table-striped > tbody > tr:nth-child(2n) > td, .table-striped > tbody > tr:nth-child(2n) > th {
+    background-color: #3a3a3a !important;
+    color: white !important;
+  }
+  
+  /* Sticky header */
+  thead th {
+    position: sticky;
+    top: 0;
+    background-color: #ffaa00 !important; /* Warna oranye untuk header */
+    color: white !important;
+    z-index: 1;
+  }
+  
+  /* Efek hover untuk seluruh baris */
+  tbody tr:hover {
+    background-color: #ffaa00 !important; /* Background warna oranye ketika disorot */
+    color: #000; /* Warna teks berubah menjadi hitam */
+    cursor: pointer; /* Mengubah cursor menjadi pointer */
+  }
+  
